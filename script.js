@@ -1,4 +1,9 @@
-let btn=document.querySelector(".btn");
+let btn=document.querySelector(".generate-button");
 btn.addEventListener("click",()=>{
-   console.log( fetch("https://meme-api.com/gimme/wholesomememes"))
+   fetch("https://meme-api.com/gimme/wholesomememes")
+   .then((res)=>res.json())
+   .then((data)=>{
+      const{title,url,author}=data;
+      console.log(title,url,author)
+   })
 })
