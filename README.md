@@ -31,5 +31,3 @@ To run the project locally:
    ```
 2. Open `index.html` in your browser
 
-## Contributing
-Feel free to submit issues or pull requests if you have improvements or suggestions.
